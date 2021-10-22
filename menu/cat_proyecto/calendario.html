@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+      <title> Getting started with dhtmlxScheduler</title>
+      <meta charset="utf-8">
+      <script src="https://cdn.dhtmlx.com/scheduler/edge/dhtmlxscheduler.js"></script>
+      <link href="https://cdn.dhtmlx.com/scheduler/edge/dhtmlxscheduler_material.css" 
+              rel="stylesheet" type="text/css" charset="utf-8">
+        <style>
+            html, body{
+                margin:5px;
+                padding:5px;
+                height:100%;
+                overflow:hidden;
+            }
+
+        </style> 
+    </head> 
+    <body> 
+    <div id="scheduler_here" class="dhx_cal_container" style='width:100%; height:100%;'> 
+        <div class="dhx_cal_navline"> 
+            <div class="dhx_cal_prev_button">&nbsp;</div> 
+            <div class="dhx_cal_next_button">&nbsp;</div> 
+            <div class="dhx_cal_today_button"></div> 
+            <div class="dhx_cal_date"></div> 
+    </div> 
+    <div class="dhx_cal_header"></div> 
+    <div class="dhx_cal_data"></div> 
+    </div> 
+    <script>
+
+        function getQueryParams(qs) {
+            qs = qs.split("+").join(" ");
+            var params = {},
+                tokens,
+                re = /[?&]?([^=]+)=([^&]*)/g;
+
+            while (tokens = re.exec(qs)) {
+                params[decodeURIComponent(tokens[1])]
+                    = decodeURIComponent(tokens[2]);
+            }
+
+            return params;
+        }
+
+        var parametros = getQueryParams(document.location.search);
+
+        console.log(parametros['id_proyecto']);
+
+        scheduler.init('scheduler_here', new Date(2021,08,20), "month");
+        scheduler.load("php/api.php?id_proyecto="+parametros['id_proyecto']);
+ 
+       
+    </script> 
+    </body> 
+</html>

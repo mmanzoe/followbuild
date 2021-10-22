@@ -1,0 +1,239 @@
+[24-Oct-2018 22:42:19 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[24-Oct-2018 16:42:27 America/Guatemala] PHP Notice:  Undefined offset: 0 in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompra.php on line 10
+[24-Oct-2018 16:42:27 America/Guatemala] PHP Notice:  Undefined offset: 0 in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompra.php on line 10
+[24-Oct-2018 16:42:27 America/Guatemala] PHP Notice:  Undefined offset: 0 in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompra.php on line 10
+[24-Oct-2018 16:42:27 America/Guatemala] PHP Notice:  Undefined offset: 0 in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompra.php on line 10
+[14-Dec-2018 00:06:55 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[16-Jan-2019 19:38:14 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[26-Feb-2019 15:33:50 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 28
+[26-Feb-2019 09:34:01 America/Guatemala] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompraSR.php on line 21
+[28-Feb-2019 14:28:59 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 28
+[08-Mar-2019 15:26:16 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[14-Mar-2019 19:31:14 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[22-Mar-2019 13:20:03 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[22-Mar-2019 13:20:03 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[29-Mar-2019 17:15:44 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 27
+[29-Mar-2019 11:15:48 America/Guatemala] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompraSM.php on line 21
+[24-Apr-2019 09:05:35 America/Guatemala] PHP Notice:  Undefined offset: 0 in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompra.php on line 10
+[24-Apr-2019 09:05:35 America/Guatemala] PHP Notice:  Undefined offset: 0 in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompra.php on line 10
+[24-Apr-2019 09:05:35 America/Guatemala] PHP Notice:  Undefined offset: 0 in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompra.php on line 10
+[24-Apr-2019 09:05:35 America/Guatemala] PHP Notice:  Undefined offset: 0 in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompra.php on line 10
+[21-May-2019 19:06:07 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 27
+[29-May-2019 21:48:47 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 28
+[29-May-2019 15:48:51 America/Guatemala] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompraSR.php on line 21
+[10-Jun-2019 15:52:04 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 28
+[10-Jun-2019 09:52:06 America/Guatemala] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompraSR.php on line 21
+[13-Jun-2019 17:46:04 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 27
+[13-Jun-2019 11:47:01 America/Guatemala] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompraSM.php on line 21
+[13-Jun-2019 23:42:43 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 27
+[13-Jun-2019 17:44:08 America/Guatemala] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompraSM.php on line 21
+[22-Jun-2019 20:06:06 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[22-Jun-2019 20:06:06 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[28-Jun-2019 19:27:25 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 27
+[28-Jun-2019 13:27:56 America/Guatemala] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompraSM.php on line 21
+[10-Jul-2019 17:51:55 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 28
+[10-Jul-2019 17:52:13 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 28
+[10-Jul-2019 11:52:39 America/Guatemala] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompraSR.php on line 21
+[11-Jul-2019 18:13:49 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[11-Jul-2019 18:13:49 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[16-Jul-2019 16:51:09 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[16-Jul-2019 16:51:09 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 27
+[23-Jul-2019 15:35:57 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 27
+[23-Jul-2019 15:35:57 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 27
+[23-Jul-2019 09:36:02 America/Guatemala] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompraSM.php on line 21
+[23-Jul-2019 21:55:10 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 27
+[23-Jul-2019 15:55:19 America/Guatemala] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompraSM.php on line 21
+[29-Jul-2019 18:31:31 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 27
+[29-Jul-2019 12:31:34 America/Guatemala] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/trasladoOrdenCompraSM.php on line 21
+[06-Aug-2019 18:50:33 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 28
+[14-Aug-2019 14:51:58 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 28
+[14-Aug-2019 15:35:23 UTC] PHP Warning:  array_splice() expects parameter 1 to be array, null given in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/eliminaProducto.php on line 7
+[19-Aug-2019 17:24:06 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[19-Aug-2019 17:25:50 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[19-Aug-2019 17:27:09 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 29
+[19-Aug-2019 17:27:16 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[19-Aug-2019 17:27:23 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSR.php on line 25
+[19-Aug-2019 17:27:36 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[19-Aug-2019 17:27:58 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSR.php on line 25
+[19-Aug-2019 17:28:16 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[19-Aug-2019 17:29:09 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSR.php on line 25
+[19-Aug-2019 17:29:16 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[19-Aug-2019 17:29:22 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 29
+[19-Aug-2019 17:29:33 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[19-Aug-2019 17:30:46 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 29
+[19-Aug-2019 17:31:33 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[19-Aug-2019 17:37:46 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 29
+[19-Aug-2019 17:55:02 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[19-Aug-2019 17:55:02 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[19-Aug-2019 17:55:02 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 29
+[19-Aug-2019 18:02:36 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 5
+[19-Aug-2019 18:12:37 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[19-Aug-2019 18:12:37 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[19-Aug-2019 18:12:37 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 29
+[19-Aug-2019 18:15:15 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[19-Aug-2019 18:15:15 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[19-Aug-2019 18:18:08 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[19-Aug-2019 18:18:08 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[19-Aug-2019 18:18:08 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 29
+[19-Aug-2019 18:18:37 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[19-Aug-2019 18:18:37 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[19-Aug-2019 18:18:37 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 29
+[19-Aug-2019 18:19:35 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[19-Aug-2019 18:19:35 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[19-Aug-2019 18:19:35 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 29
+[19-Aug-2019 18:20:51 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[19-Aug-2019 18:20:51 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[19-Aug-2019 20:35:03 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[19-Aug-2019 20:35:03 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[19-Aug-2019 20:37:08 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[19-Aug-2019 20:37:08 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[19-Aug-2019 20:40:22 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 5
+[19-Aug-2019 20:40:44 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[19-Aug-2019 20:40:44 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[19-Aug-2019 20:40:51 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 5
+[21-Aug-2019 13:14:36 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 29
+[21-Aug-2019 13:14:55 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[21-Aug-2019 13:23:25 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 29
+[21-Aug-2019 13:24:25 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[21-Aug-2019 13:24:25 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[21-Aug-2019 13:24:25 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[21-Aug-2019 13:25:37 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 29
+[21-Aug-2019 13:29:11 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[21-Aug-2019 14:01:08 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 29
+[21-Aug-2019 14:01:12 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[21-Aug-2019 14:58:06 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 29
+[21-Aug-2019 14:59:58 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 29
+[21-Aug-2019 17:11:14 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[21-Aug-2019 17:11:14 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[21-Aug-2019 17:12:42 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[21-Aug-2019 17:12:42 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[21-Aug-2019 17:22:02 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[21-Aug-2019 17:22:02 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[21-Aug-2019 17:22:15 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 5
+[21-Aug-2019 17:23:17 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 28
+[21-Aug-2019 17:24:22 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[21-Aug-2019 17:24:22 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[23-Aug-2019 14:43:40 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 28
+[23-Aug-2019 14:44:24 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 5
+[23-Aug-2019 16:45:02 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 5
+[23-Aug-2019 16:45:24 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 5
+[23-Aug-2019 16:50:29 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 5
+[23-Aug-2019 16:52:36 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 5
+[27-Aug-2019 12:40:35 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[03-Sep-2019 13:20:18 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 28
+[03-Sep-2019 13:20:27 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 5
+[04-Sep-2019 19:44:58 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 5
+[06-Sep-2019 19:18:37 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[06-Sep-2019 19:18:37 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[11-Sep-2019 21:25:17 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[11-Sep-2019 21:25:17 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[17-Sep-2019 22:29:24 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoSM.php on line 28
+[17-Sep-2019 22:34:58 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[17-Sep-2019 22:34:58 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[19-Sep-2019 20:49:40 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[19-Sep-2019 20:49:40 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[20-Sep-2019 13:31:34 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 5
+[09-Oct-2019 18:28:02 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[09-Oct-2019 18:28:02 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[14-Oct-2019 16:04:50 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 5
+[15-Oct-2019 13:20:26 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 5
+[15-Oct-2019 13:20:26 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 5
+[17-Oct-2019 17:05:00 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 5
+[31-Oct-2019 22:58:17 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[31-Oct-2019 22:58:17 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[31-Oct-2019 23:09:22 UTC] PHP Notice:  Undefined index: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 7
+[31-Oct-2019 23:09:22 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProductoAF.php on line 25
+[04-Nov-2019 21:31:47 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[11-Nov-2019 18:23:38 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[11-Nov-2019 18:23:38 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[02-Dec-2019 15:54:15 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[02-Dec-2019 15:54:15 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[18-Dec-2019 22:30:52 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 6
+[18-Dec-2019 22:30:52 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 36
+[20-Dec-2019 23:15:11 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 26
+[20-Dec-2019 23:15:11 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 28
+[23-Jan-2020 18:20:36 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[23-Jan-2020 18:20:36 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[04-Feb-2020 16:14:42 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[04-Feb-2020 16:14:42 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[04-Feb-2020 16:14:54 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[04-Feb-2020 16:14:54 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[04-Feb-2020 16:15:03 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[04-Feb-2020 16:15:03 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[07-Feb-2020 16:37:19 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[07-Feb-2020 16:37:19 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[18-Feb-2020 20:30:45 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[18-Feb-2020 20:30:45 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[29-Apr-2020 18:12:47 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[29-Apr-2020 18:12:47 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[27-May-2020 16:40:53 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[27-May-2020 16:40:55 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[27-May-2020 16:40:55 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[27-May-2020 19:38:06 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 6
+[27-May-2020 13:43:47 America/Guatemala] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/lista_proveedor.php on line 21
+[27-May-2020 13:43:48 America/Guatemala] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/lista_proveedor.php on line 21
+[27-May-2020 13:43:48 America/Guatemala] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/lista_proveedor.php on line 21
+[27-May-2020 13:43:49 America/Guatemala] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/lista_proveedor.php on line 21
+[27-May-2020 13:43:49 America/Guatemala] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/lista_proveedor.php on line 21
+[27-May-2020 20:14:15 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[27-May-2020 20:14:18 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[27-May-2020 20:14:18 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[27-May-2020 20:16:35 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[27-May-2020 20:16:35 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[30-May-2020 03:29:59 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[30-May-2020 03:29:59 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[30-May-2020 03:31:56 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 28
+[30-May-2020 03:32:32 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[30-May-2020 04:06:23 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 28
+[30-May-2020 04:06:30 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[30-May-2020 04:06:32 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[30-May-2020 04:06:33 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[30-May-2020 04:06:33 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[30-May-2020 04:07:52 UTC] PHP Notice:  A non well formed numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 28
+[30-May-2020 04:08:04 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[30-May-2020 04:08:04 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[18-Jun-2020 16:59:52 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 5
+[18-Jun-2020 16:59:52 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 39
+[18-Jun-2020 17:00:09 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 5
+[18-Jun-2020 17:00:09 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 39
+[18-Jun-2020 17:00:30 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 5
+[18-Jun-2020 17:00:30 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 39
+[18-Jun-2020 17:01:56 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 5
+[18-Jun-2020 17:01:56 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 39
+[18-Jun-2020 17:04:57 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 5
+[18-Jun-2020 17:04:57 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 39
+[22-Jun-2020 19:58:56 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[22-Jun-2020 19:58:56 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[03-Jul-2020 19:42:32 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[03-Jul-2020 19:42:32 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[17-Jul-2020 16:42:11 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 5
+[17-Jul-2020 16:42:12 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 39
+[17-Jul-2020 16:42:32 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 5
+[17-Jul-2020 16:42:32 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 39
+[17-Jul-2020 16:42:56 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 5
+[17-Jul-2020 16:42:56 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 39
+[17-Jul-2020 16:43:03 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 5
+[17-Jul-2020 16:43:03 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSM.php on line 39
+[17-Jul-2020 16:44:40 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 6
+[17-Jul-2020 16:44:40 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 36
+[04-Aug-2020 03:03:25 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[04-Aug-2020 03:03:25 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[25-Aug-2020 15:53:52 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[25-Aug-2020 15:54:03 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[25-Aug-2020 15:54:18 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[25-Aug-2020 15:54:27 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[25-Sep-2020 18:20:40 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[18-Nov-2020 19:35:49 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 26
+[18-Nov-2020 19:35:49 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 28
+[18-Nov-2020 19:35:54 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[18-Nov-2020 19:35:54 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[18-Nov-2020 19:37:23 UTC] PHP Warning:  A non-numeric value encountered in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/agregaProducto.php on line 28
+[18-Nov-2020 19:37:30 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[18-Nov-2020 19:37:30 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44
+[23-Nov-2020 16:57:01 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 6
+[23-Nov-2020 16:57:01 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoAF.php on line 36
+[16-Dec-2020 13:49:08 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 6
+[16-Dec-2020 13:49:08 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProductoSR.php on line 36
+[09-Feb-2021 11:46:39 America/Guatemala] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/t3i181sj12gz/public_html/sistema/php/conexion.php on line 7
+[25-Feb-2021 13:17:26 UTC] PHP Notice:  Undefined index: simbolo in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 6
+[25-Feb-2021 13:17:26 UTC] PHP Notice:  Undefined variable: proveedor in /home/t3i181sj12gz/public_html/sistema/administracion/orden_compra/php/listadoProducto.php on line 44

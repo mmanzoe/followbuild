@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+    <link href="lib/alertify/css/alertify.core.css" rel="stylesheet" id="bootstrap-css">
+    <link href="lib/alertify/css/alertify.default.css" rel="stylesheet" id="bootstrap-css">
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/alertify/js/alertify.js"></script>
+    <script src="js/funcion_logueo.js"></script>
+    
+</head>
+<body>
+
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first mt-3">
+            <img src="img/logo.png" id="icon" alt="User Icon" />
+            <h1 style="color: chocolate;">FollowBuild / Consursa</h1>
+          </div>
+      
+          <!-- Login Form -->
+          <form id="login" autocomplete="off">
+            <input type="text" id="usuario" class="fadeIn second" placeholder="usuario" required>
+            <input type="password" id="contrasena" class="fadeIn third" placeholder="contraseña" required maxlength="10">
+            <input type="submit" class="fadeIn fourth" value="Ingresar">
+          </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" id="solicitudAcceso" href="#">Solicitud de acceso</a>
+            <br>
+            <br>
+            <a class="underlineHover" id="recuperaAcceso" href="#">Recuperar acceso</a>
+          </div>
+      
+        </div>
+      </div>
+    
+</body>
+
+
+<div class="modal fade" id="modalSolicitudAcceso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Solicitud de Acceso</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form id="envioSolicitud" autocomplete="off">
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                      <label>Nombre</label>
+                      <input type="text" id="nombre" class="fadeIn second form-control-sm" placeholder="Nombre" required>
+                  </div>
+                  <div class="form-group">
+                      <label>Correo Electronico</label>
+                      <input type="email" id="email" class="fadeIn second" placeholder="Email" required>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+            </div>
+        </form>
+      </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modalRecuperaAcceso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Recupera Acceso</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form id="cambioAcceso" autocomplete="off">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                    <label>Correo Electronico</label>
+                    <input type="email" id="email_recupera" class="fadeIn second" placeholder="Email" required>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</html>
