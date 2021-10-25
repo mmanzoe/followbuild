@@ -2,7 +2,7 @@
 require('../../cat_proyecto/php/class.proyecto.php');
 
 $proyecto = new Proyecto();
-$resultados = $proyecto->listado();
+$resultados = $proyecto->listado('1');
 
 echo '<option>SELECCIONE</option>';
 for($n=0; $n<count($resultados); $n++){

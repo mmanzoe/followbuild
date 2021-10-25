@@ -6,7 +6,7 @@ $proyecto = new Proyecto();
 
 if($_REQUEST['tipo']=='read'){
 
-    $registros = $proyecto->listado();
+    $registros = $proyecto->listado('1');
 
 }else if($_REQUEST['tipo']=='create'){
 
@@ -66,7 +66,6 @@ if($_REQUEST['tipo']=='read'){
     
      
 }
-
 
 
 header('Content-type: application/json; charset=utf-8');

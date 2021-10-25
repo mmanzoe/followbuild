@@ -19,9 +19,9 @@ class Proyecto{
 		$this->conn = new Conexion();
 	}
 
-	function listado(){
+	function listado($estado){
         $conexion = $this->conn->conectar();
-        $consulta = $conexion->prepare("SELECT cat_proyecto.*, cat_empresa.nombre as nombre_empresa, usuario.nombre as nombre_encargado FROM cat_proyecto INNER JOIN cat_empresa ON (cat_empresa.id_empresa = cat_proyecto.id_empresa) INNER JOIN usuario ON (usuario.id = cat_proyecto.id_encargado) ORDER BY id DESC");
+        $consulta = $conexion->prepare("SELECT cat_proyecto.*, cat_empresa.nombre as nombre_empresa, usuario.nombre as nombre_encargado FROM cat_proyecto INNER JOIN cat_empresa ON (cat_empresa.id_empresa = cat_proyecto.id_empresa) INNER JOIN usuario ON (usuario.id = cat_proyecto.id_encargado) WHERE cat_proyecto.estado = '".$estado."' ORDER BY id DESC");
 
         $consulta->execute();
 		$consulta->store_result();
@@ -63,6 +63,20 @@ class Proyecto{
             $this->id_asignado = $conexion->insert_id;
             return true;
             
+        }else{
+            return false;
+        }       
+
+    }
+
+    function cierre_proyecto($id_proyecto){
+        
+        $conexion = $this->conn->conectar();
+        $consulta = $conexion->prepare("UPDATE cat_proyecto set estado = 2 WHERE id=?");
+        $consulta->bind_param('i', $id_proyecto);
+        
+		if($consulta->execute()){
+            return true;
         }else{
             return false;
         }       
