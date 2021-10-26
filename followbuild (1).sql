@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-10-2021 a las 04:40:09
+-- Tiempo de generación: 25-10-2021 a las 19:37:03
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.2.33
 
@@ -1203,7 +1203,9 @@ CREATE TABLE `cat_proyecto` (
 --
 
 INSERT INTO `cat_proyecto` (`id`, `id_empresa`, `cod_proyecto`, `nombre_proyecto`, `descripcion`, `monto`, `id_encargado`, `estado`, `id_usuario`, `fecha_ingresa`) VALUES
-(1, 10, '784JK', 'CARRETERA CA9', 'CARRETERA DE 5 KM EN VILLA NUEVA', '670000.00', 2, 1, 1, '2021-10-14 13:44:31');
+(1, 10, '784JK', 'CARRETERA CA9', 'CARRETERA DE 5 KM EN VILLA NUEVA', '670000.00', 2, 2, 1, '2021-10-14 13:44:31'),
+(2, 8, '347HJK', 'CONSTRUCCIóN ESCUELA', 'CONSTRUCCIóN ESCUELA', '100000.00', 2, 1, 1, '2021-10-14 21:50:29'),
+(3, 7, '849JJJ', 'PUENTE LAS VACAS', 'PUENTE LAS VACAS', '50000.00', 2, 1, 1, '2021-10-16 16:14:52');
 
 -- --------------------------------------------------------
 
@@ -1366,7 +1368,13 @@ CREATE TABLE `detalle_fase_proyecto` (
 INSERT INTO `detalle_fase_proyecto` (`id`, `id_proyecto`, `id_fase`, `fecha_inicio`, `fecha_final`) VALUES
 (1, 1, 1, '2021-10-04', '2021-10-08'),
 (2, 1, 2, '2021-10-11', '2021-10-15'),
-(3, 1, 5, '2021-10-18', '2021-10-20');
+(3, 1, 5, '2021-10-18', '2021-10-20'),
+(4, 2, 1, '2021-10-04', '2021-10-07'),
+(5, 2, 3, '2021-10-11', '2021-10-13'),
+(6, 2, 4, '2021-10-18', '2021-10-22'),
+(7, 3, 1, '2021-10-04', '2021-10-06'),
+(8, 3, 3, '2021-10-11', '2021-10-13'),
+(9, 3, 4, '2021-10-25', '2021-10-27');
 
 -- --------------------------------------------------------
 
@@ -1390,7 +1398,13 @@ CREATE TABLE `detalle_gasto_proyecto` (
 INSERT INTO `detalle_gasto_proyecto` (`id`, `id_proyecto`, `id_tipo_gasto`, `monto`, `id_usuario`, `fecha_ingresa`) VALUES
 (1, 1, 1, 100000, 1, '2021-10-14 13:44:31'),
 (2, 1, 3, 250000, 1, '2021-10-14 13:44:31'),
-(3, 1, 5, 300000, 1, '2021-10-14 13:44:31');
+(3, 1, 5, 300000, 1, '2021-10-14 13:44:31'),
+(4, 2, 1, 30000, 1, '2021-10-14 21:50:29'),
+(5, 2, 3, 60000, 1, '2021-10-14 21:50:29'),
+(6, 2, 5, 30000, 1, '2021-10-14 21:50:29'),
+(7, 3, 1, 10000, 1, '2021-10-16 16:14:52'),
+(8, 3, 3, 30000, 1, '2021-10-16 16:14:52'),
+(9, 3, 5, 10000, 1, '2021-10-16 16:14:52');
 
 -- --------------------------------------------------------
 
@@ -1441,7 +1455,9 @@ CREATE TABLE `detalle_pago_proveedor` (
 
 INSERT INTO `detalle_pago_proveedor` (`id`, `id_factura`, `id_tipo_pago`, `id_banco`, `documento_valida`, `archivo_retencion`, `valor`, `nombre_ingresa`, `fecha_ingresa`) VALUES
 (1, 1, 2, 2, '123', '', 1000, 1, '2021-10-14 19:56:16'),
-(2, 2, 2, 1, '8756h', '', 500, 1, '2021-10-14 20:21:26');
+(2, 2, 2, 1, '8756h', '', 500, 1, '2021-10-14 20:21:26'),
+(3, 4, 2, 1, '1321321321', '', 600, 1, '2021-10-15 03:56:14'),
+(4, 5, 2, 2, '567', '', 96, 1, '2021-10-16 22:22:15');
 
 -- --------------------------------------------------------
 
@@ -1522,7 +1538,12 @@ CREATE TABLE `factura_proveedor_detalle` (
 INSERT INTO `factura_proveedor_detalle` (`id`, `serie`, `documento`, `proveedor`, `codigo_producto`, `no_lote`, `fecha_vencimiento`, `no_orden`, `medida`, `cantidad`, `valor`) VALUES
 (1, 'A', '1', '1532227', '32', NULL, NULL, 1, 1, 15, 7.30),
 (2, 'A', '1', '1532227', '19', NULL, NULL, 1, 1, 4, 6000.00),
-(3, 'A', '2', '1289357', '33', NULL, NULL, 2, 1, 500, 3.50);
+(3, 'A', '2', '1289357', '33', NULL, NULL, 2, 1, 500, 3.50),
+(4, 'A', '3', '11941502', '19', NULL, NULL, 3, 1, 1, 6000.00),
+(5, 'A', '67', '1699431', '19', NULL, NULL, 4, 1, 2, 6000.00),
+(6, 'A', '67', '1699431', '21', NULL, NULL, 4, 1, 3, 200.00),
+(7, 'B', '15', '1539167', '32', NULL, NULL, 5, 1, 100, 7.30),
+(8, 'B', '15', '1539167', '34', NULL, NULL, 5, 1, 200, 1.33);
 
 --
 -- Disparadores `factura_proveedor_detalle`
@@ -1564,7 +1585,10 @@ CREATE TABLE `factura_proveedor_encabezado` (
 
 INSERT INTO `factura_proveedor_encabezado` (`id`, `tipo_factura`, `serie`, `documento`, `fecha_factura`, `proveedor`, `id_tipo_contribuyente`, `impuesto`, `credito`, `total_factura`, `id_proyecto`, `id_gasto_proyecto`, `no_orden`, `estado`, `nombre_ingresa`, `fecha_ingresa`, `fecha_pago`) VALUES
 (1, 'MATERIAL', 'A', '1', '2021-10-13', '1532227', NULL, '12.00', 15, 24109.50, 1, 1, 1, 1, '1', '2021-10-14 19:55:32', NULL),
-(2, 'MATERIAL', 'A', '2', '2021-10-11', '1289357', NULL, '12.00', 0, 1750.00, 1, 3, 2, 1, '1', '2021-10-14 20:05:32', NULL);
+(2, 'MATERIAL', 'A', '2', '2021-10-11', '1289357', NULL, '12.00', 0, 1750.00, 1, 3, 2, 1, '1', '2021-10-14 20:05:32', NULL),
+(3, 'MATERIAL', 'A', '3', '2021-10-13', '11941502', NULL, '12.00', 0, 6000.00, 1, 3, 3, 1, '1', '2021-10-15 03:14:05', NULL),
+(4, 'MATERIAL', 'A', '67', '2021-10-12', '1699431', NULL, '12.00', 0, 12600.00, 2, 3, 4, 1, '1', '2021-10-15 03:55:44', NULL),
+(5, 'MATERIAL', 'B', '15', '2021-10-20', '1539167', NULL, '12.00', 15, 996.00, 3, 3, 5, 1, '1', '2021-10-16 22:20:43', NULL);
 
 -- --------------------------------------------------------
 
@@ -1616,7 +1640,12 @@ CREATE TABLE `orden_compra_detalle` (
 INSERT INTO `orden_compra_detalle` (`id`, `id_orden_compra`, `cod_producto`, `cantidad`, `valor`, `no_lote`, `fecha_vencimiento`) VALUES
 (1, 1, '32', 15.00, 7.3000, NULL, NULL),
 (2, 1, '19', 4.00, 6000.0000, NULL, NULL),
-(3, 2, '33', 500.00, 3.5000, NULL, NULL);
+(3, 2, '33', 500.00, 3.5000, NULL, NULL),
+(4, 3, '19', 1.00, 6000.0000, NULL, NULL),
+(5, 4, '19', 2.00, 6000.0000, NULL, NULL),
+(6, 4, '21', 3.00, 200.0000, NULL, NULL),
+(7, 5, '32', 100.00, 7.3000, NULL, NULL),
+(8, 5, '34', 200.00, 1.3300, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1648,7 +1677,10 @@ CREATE TABLE `orden_compra_encabezado` (
 
 INSERT INTO `orden_compra_encabezado` (`id`, `cod_proveedor`, `tipo_orden`, `moneda`, `cambio_moneda`, `total_ordencompra`, `tipo_pago`, `id_proyecto`, `id_gasto_proyecto`, `observaciones`, `id_usuario_ingresa`, `fecha_ingresa`, `estado`, `nombre_autoriza`, `fecha_autoriza`) VALUES
 (1, '1532227', 'MATERIAL', 1, 1.0000, 24109.50, 'EFECTIVO', 1, 1, 'compra de materiales', '1', '2021-10-14 19:50:25', 2, '1', '2021-10-14 13:52:42'),
-(2, '1289357', 'MATERIAL', 1, 1.0000, 1750.00, 'EFECTIVO', 1, 3, 'compra de materiales', '1', '2021-10-14 20:04:12', 2, '1', '2021-10-14 14:04:20');
+(2, '1289357', 'MATERIAL', 1, 1.0000, 1750.00, 'EFECTIVO', 1, 3, 'compra de materiales', '1', '2021-10-14 20:04:12', 2, '1', '2021-10-14 14:04:20'),
+(3, '11941502', 'MATERIAL', 1, 1.0000, 6000.00, 'EFECTIVO', 1, 3, 'compra de materiales', '1', '2021-10-15 03:09:18', 2, '1', '2021-10-14 21:10:38'),
+(4, '1699431', 'MATERIAL', 1, 1.0000, 12600.00, 'EFECTIVO', 2, 3, 'compra de vigas', '1', '2021-10-15 03:53:11', 2, '1', '2021-10-14 21:53:58'),
+(5, '1539167', 'MATERIAL', 1, 1.0000, 996.00, 'EFECTIVO', 3, 3, 'compras', '1', '2021-10-16 22:17:26', 2, '1', '2021-10-16 16:18:22');
 
 -- --------------------------------------------------------
 
@@ -1723,7 +1755,7 @@ INSERT INTO `sub_modulo` (`id`, `nombre`, `ruta`, `modulo`, `icono`, `fecha_ingr
 (11, 'Fase Proyecto', 'cat_fase_proyecto/', 2, 'fa-check-circle', '2021-05-10 13:04:20'),
 (12, 'Ingreso Proyecto', 'cat_proyecto/', 4, 'fa-check-circle', '2021-05-12 12:18:09'),
 (13, 'Seguimiento Proyecto', 'seguimiento_proyecto/', 4, 'fa-file-import', '2021-05-12 12:41:46'),
-(14, 'Cierre Proyecto', 'ingresoProveedor/', 4, 'fa-times-circle', '2021-05-13 07:39:46'),
+(14, 'Cierre Proyecto', 'cierre_proyecto/', 4, 'fa-times-circle', '2021-05-13 07:39:46'),
 (15, 'Ingreso Factura', 'ingreso_factura_cliente/', 5, 'fa fa-file', '2021-05-17 11:58:25'),
 (16, 'Factura Proveedor', 'ingreso_factura_proveedor/', 1, 'fa-edit', '2021-05-18 13:50:26'),
 (17, 'Tipo Orden C.', 'cat_tipo_ordencompra/', 2, 'fa-file', '2021-06-22 09:19:58'),
@@ -1755,7 +1787,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id`, `nombre`, `correo`, `tipo`, `usuario`, `contrasena`, `estado`, `idsesion`, `token`) VALUES
-(1, 'Mario Manzo', 'mario22121985@gmail.com', '1', 'mario2212', '$2y$10$gaPKgjBemFoxqHTQIi6BbOvTYRVCXnn90iydNcbLUgmPiDsvhoIXS', 1, 'gn5je7h4rna1rkc7jvaauj115g', '7eiA'),
+(1, 'Mario Manzo', 'mario22121985@gmail.com', '1', 'mario2212', '$2y$10$gaPKgjBemFoxqHTQIi6BbOvTYRVCXnn90iydNcbLUgmPiDsvhoIXS', 1, 'm2aua2328sddosaijl6u0q4mih', 'LqO'),
 (2, 'Carlos Estrada', 'mario22121985@hotmail.com', '2', 'mario22121985@hotmail.com', '$2y$10$nHwRLlcr.opxmRFYo8Ke.eZzbmrv15MR0JK6k6FOVH968QfLSOwE.', 1, NULL, '');
 
 --
@@ -2114,7 +2146,7 @@ ALTER TABLE `cat_proveedor`
 -- AUTO_INCREMENT de la tabla `cat_proyecto`
 --
 ALTER TABLE `cat_proyecto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `cat_tipo_contribuyente`
@@ -2156,13 +2188,13 @@ ALTER TABLE `cat_tipo_placa`
 -- AUTO_INCREMENT de la tabla `detalle_fase_proyecto`
 --
 ALTER TABLE `detalle_fase_proyecto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `detalle_gasto_proyecto`
 --
 ALTER TABLE `detalle_gasto_proyecto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `detalle_pago_cliente`
@@ -2174,7 +2206,7 @@ ALTER TABLE `detalle_pago_cliente`
 -- AUTO_INCREMENT de la tabla `detalle_pago_proveedor`
 --
 ALTER TABLE `detalle_pago_proveedor`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `events`
@@ -2198,13 +2230,13 @@ ALTER TABLE `factura_cliente_encabezado`
 -- AUTO_INCREMENT de la tabla `factura_proveedor_detalle`
 --
 ALTER TABLE `factura_proveedor_detalle`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `factura_proveedor_encabezado`
 --
 ALTER TABLE `factura_proveedor_encabezado`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `modulo`
@@ -2216,13 +2248,13 @@ ALTER TABLE `modulo`
 -- AUTO_INCREMENT de la tabla `orden_compra_detalle`
 --
 ALTER TABLE `orden_compra_detalle`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `orden_compra_encabezado`
 --
 ALTER TABLE `orden_compra_encabezado`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `permiso_usuario`

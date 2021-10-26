@@ -1,11 +1,13 @@
 <?php
 session_start();
 date_default_timezone_set('America/Guatemala');
+header('Content-Type: text/html; charset=UTF-8');
 require('../../../php/class.conexion.php');
 $return = Array();
 
 
 class FaseProyecto{
+
 	private $registros = [];
     private $codigo;
     private $nombre;
@@ -16,9 +18,11 @@ class FaseProyecto{
 	}
 
 	function listado(){
-        $conexion = $this->conn->conectar();
-        $consulta = $conexion->prepare("SELECT * FROM cat_fase_proyecto");
 
+       
+        $conexion = $this->conn->conectar();
+        $consulta = $conexion->query("SET NAMES 'utf8'");
+        $consulta = $conexion->prepare("SELECT * FROM cat_fase_proyecto");
         $consulta->execute();
 		$consulta->store_result();
 
@@ -65,6 +69,7 @@ class FaseProyecto{
     }
 
 }
+
 
 
 

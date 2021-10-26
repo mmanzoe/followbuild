@@ -14,6 +14,7 @@ class Proveedor{
 	function listaProveedor(){
         $return = Array();
         $conexion = $this->conn->conectar();
+        $consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT cat_proveedor.*, tc.nombre as nombre_tipo_contribuyente FROM cat_proveedor INNER JOIN cat_tipo_contribuyente as tc ON(tc.id = cat_proveedor.id_tipo_contribuyente)");
         $consulta->execute();
 		$consulta->store_result();

@@ -14,7 +14,7 @@ function validaAcceso(event){
 
     let usuario = $('#usuario').val();
     let contrasena = $('#contrasena').val();
-
+   
     $.ajax({
         async:true,
         type:"POST",

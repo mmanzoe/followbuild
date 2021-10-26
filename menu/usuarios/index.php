@@ -3,7 +3,6 @@ session_start();
 require_once ('../../class/class.session.php');
 
 $validaAcceso = new validasesion();
-if($validaAcceso->getValidaLogin()===true){}else{header('location: ../');};
 
 if(!isset( $_SESSION['datos_logueo']['estado'] )){
     if( $_SESSION['datos_logueo']['estado']!=TRUE){
@@ -11,7 +10,6 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
     }
     header('location: ../');
 }
-
 
 ?>
 <!doctype html>

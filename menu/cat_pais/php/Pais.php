@@ -15,7 +15,8 @@ class Pais{
 	function listaPais(){
         $conexion = $this->conn->conectar();
         $consulta = $conexion->prepare("SELECT cat_pais.id, cat_pais.nombre, usuario.nombre as nombre_ingresa FROM cat_pais INNER JOIN usuario ON(usuario.id = cat_pais.usuario_ingresa) ORDER BY cat_pais.nombre desc");
-        $consulta->execute();
+        
+		$consulta->execute();
 		$consulta->store_result();
 
 		if($consulta->num_rows>0){

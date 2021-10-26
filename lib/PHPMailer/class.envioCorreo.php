@@ -52,7 +52,7 @@ class EnvioCorreo{
         $mail->Send();
     
     }
-
+    
     function envioMensajeAdjunto($conexionPHPMailer, $adjunto){
 
         $mail = $conexionPHPMailer;

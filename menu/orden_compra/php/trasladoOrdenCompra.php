@@ -51,7 +51,7 @@ if($resinsertenc && $reulinsertDetalle && $resupdate){
 	
 }else{
         mysqli_query($conexion, "ROLLBACK");
-	$return = Array('ok' => FALSE, 'msg' => "Error al registrar la orden de compra!! ".$insertocd);
+	$return = Array('ok' => FALSE, 'msg' => "Error al registrar la orden de compra!! ");
 }
 
 
