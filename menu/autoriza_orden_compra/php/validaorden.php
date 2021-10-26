@@ -186,10 +186,6 @@ function enviocorreo($id_registro, $proveedor, $tipo_orden, $observaciones){
 	$mail->Password = 'Mrme22121985.';
 	$mail->Send();
 
-
-        
-
-
     
 }
 

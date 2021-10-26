@@ -42,7 +42,7 @@ function listaRegistro(){
         success: function(Data){
 			
             for(var x=0;x<Data.length;x++){
-                registros.push({"id":Data[x]["id"], "id_empresa":Data[x]["id_empresa"], "cod_proyecto":Data[x]['cod_proyecto'], "nombre_proyecto":Data[x]["nombre_proyecto"], "descripcion":Data[x]["descripcion"], "nombre_empresa":Data[x]['nombre_empresa'], "monto":Data[x]['monto'], "nombre_encargado":Data[x]['nombre_encargado'], "acciones":"<a href='' class='cierre_proyecto' id_proyecto='"+Data[x]['id']+"' title='eliminar'><i style='color:red' class='fa fa-times-circle'></i> </a>"})	
+                registros.push({"id":Data[x]["id"], "id_empresa":Data[x]["id_empresa"], "cod_proyecto":Data[x]['cod_proyecto'], "nombre_proyecto":Data[x]["nombre_proyecto"], "descripcion":Data[x]["descripcion"], "nombre_empresa":Data[x]['nombre_empresa'], "monto":Data[x]['monto'], "nombre_encargado":Data[x]['nombre_encargado'], "acciones":"<a href='' class='cierre_proyecto' id_proyecto='"+Data[x]['id']+"' title='cerrar proyecto'><i style='color:red' class='fa fa-times-circle'></i> </a>"})	
 			}
 
 			loadPanel.hide();

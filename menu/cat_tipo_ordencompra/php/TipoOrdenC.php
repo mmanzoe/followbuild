@@ -22,6 +22,7 @@ class TipoOrdenCompra{
 
 	function listado(){
         $conexion = $this->conn->conectar();
+        $consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT * FROM cat_tipo_ordencompra");
 
         $consulta->execute();

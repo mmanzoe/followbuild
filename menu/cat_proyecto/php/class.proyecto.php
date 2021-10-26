@@ -21,6 +21,7 @@ class Proyecto{
 
 	function listado($estado){
         $conexion = $this->conn->conectar();
+        $consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT cat_proyecto.*, cat_empresa.nombre as nombre_empresa, usuario.nombre as nombre_encargado FROM cat_proyecto INNER JOIN cat_empresa ON (cat_empresa.id_empresa = cat_proyecto.id_empresa) INNER JOIN usuario ON (usuario.id = cat_proyecto.id_encargado) WHERE cat_proyecto.estado = '".$estado."' ORDER BY id DESC");
 
         $consulta->execute();
@@ -42,6 +43,7 @@ class Proyecto{
     function grabar($id, $id_empresa, $cod_proyecto, $nombre_proyecto, $descripcion, $monto, $encargado, $fases, $gastos, $id_usuario){
         
         $conexion = $this->conn->conectar();
+        $consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT id FROM cat_proyecto WHERE cod_proyecto=?");
         $consulta->bind_param('s', $cod_proyecto);
         $consulta->execute();
@@ -49,9 +51,6 @@ class Proyecto{
 
         if($consulta->num_rows>0){
             $consulta->bind_result($idregistro);            
-
-            //$consulta = $conexion->prepare("UPDATE cat_fase_proyecto SET nombre='".$nombre."', descripcion='".$descripcion."' WHERE id = ?");
-            //$consulta->bind_param('s',$cod_proyecto);
 
         }else{
 
@@ -111,6 +110,7 @@ class Proyecto{
 
     function listafasesproyecto($id_proyecto){
         $conexion = $this->conn->conectar();
+        $consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT dfp.*, cfp.nombre FROM detalle_fase_proyecto AS dfp INNER JOIN cat_fase_proyecto AS cfp ON(cfp.id = dfp.id_fase) WHERE id_proyecto='".$id_proyecto."'");
         $consulta->execute();
 		$consulta->store_result();
@@ -132,6 +132,7 @@ class Proyecto{
 
     function listagastosproyecto($id_proyecto){
         $conexion = $this->conn->conectar();
+        $consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT dgp.*, ctg.nombre FROM detalle_gasto_proyecto AS dgp INNER JOIN cat_tipo_gasto AS ctg ON(ctg.id = dgp.id_tipo_gasto) WHERE id_proyecto='".$id_proyecto."'");
         $consulta->execute();
 		$consulta->store_result();

@@ -14,6 +14,7 @@ class Producto{
 
 	function listado(){
         $conexion = $this->conn->conectar();
+        $consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT cat_producto.*, cat_medida.nombre as nombre_medida FROM cat_producto INNER JOIN cat_medida ON (cat_medida.id = cat_producto.id_medida)");
 
         $consulta->execute();
@@ -36,6 +37,7 @@ class Producto{
     function grabar($codigo, $nombre, $descripcion, $precio, $usuario_ingresa){
         
         $conexion = $this->conn->conectar();
+        $consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT id FROM cat_producto WHERE codigo_producto=?");
         $consulta->bind_param('i', $codigo);
         $consulta->execute();

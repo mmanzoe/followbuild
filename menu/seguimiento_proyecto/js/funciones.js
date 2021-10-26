@@ -190,7 +190,7 @@ function muestraImagefactura(event){
 
 	var factura = $(this).attr('factura');
 	$('.visualiza-factura').html('');
-	$('.visualiza-factura').append('<embed src="../ingreso_factura_proveedor/factura/'+factura+'.jpg" width="100%" />');
+	$('.visualiza-factura').append('<embed src="../ingreso_factura_proveedor/factura/'+factura+'.JPG" width="100%" />');
 	//$('.visualiza-factura').append('<iframe src="../ingreso_factura_proveedor/factura/A1614940450.jpg" width="100%"></iframe>');
 
 }

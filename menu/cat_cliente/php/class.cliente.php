@@ -25,6 +25,7 @@ class Cliente{
 
 	function listaCliente(){
         $conexion = $this->conn->conectar();
+		$consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT * FROM cat_cliente");
         $consulta->execute();
 		$consulta->store_result();

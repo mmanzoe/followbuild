@@ -1,10 +1,9 @@
 $(document).ready(inicioEventos);
 
 function inicioEventos(){
-	//listaCuntasContables();
+	
 	busca_orden_factura();	
 	$('#resultados').on('click','.autoriza', autorizaOrden);
-	//$('#autorizaorden').click(autorizaOrden);
 	$('#resultados').on('click','.rechaza', rechazaOrden);
 	
 }
@@ -118,11 +117,10 @@ function autorizaOrden(event){
 		},
 		success: function(Data){
 			$('.alertify-log').remove();
-			
                         
 			if(Data.ok == true){
 				alertify.success(Data.msg);
-				$('.autoriza_orden_compra').modal('hide');
+				//$('.autoriza_orden_compra').modal('hide');
 				busca_orden_factura();
 			}else if(Data.ok == false){
 				alertify.error(Data.msg);

@@ -14,6 +14,7 @@ class Pais{
 
 	function listaPais(){
         $conexion = $this->conn->conectar();
+		$consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT cat_pais.id, cat_pais.nombre, usuario.nombre as nombre_ingresa FROM cat_pais INNER JOIN usuario ON(usuario.id = cat_pais.usuario_ingresa) ORDER BY cat_pais.nombre desc");
         
 		$consulta->execute();

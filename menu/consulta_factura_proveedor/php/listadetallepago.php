@@ -5,7 +5,7 @@ require('../../../php/conect.php');
 
 $id_registro = $_REQUEST['idregistro'];
 
-$query = "SELECT detalle.*, cat_banco.nombre as nom_banco, tipo_pago.nombre as nom_tipopago FROM detalle_pago_proveedor as detalle INNER JOIN cat_banco ON(cat_banco.id = detalle.id_banco) INNER JOIN tipo_pago ON(detalle.id_tipo_pago = tipo_pago.id) WHERE detalle.id_factura ='".$id_registro."'";
+$query = "SELECT detalle.*, cat_banco.nombre as nom_banco, tipo_pago.nombre as nom_tipopago FROM detalle_pago_proveedor as detalle INNER JOIN cat_banco ON(cat_banco.id = detalle.id_banco) INNER JOIN cat_tipo_pago_proveedor AS tipo_pago ON(detalle.id_tipo_pago = tipo_pago.id) WHERE detalle.id_factura ='".$id_registro."'";
 $resultados = mysqli_query($conexion, $query);
 
 	

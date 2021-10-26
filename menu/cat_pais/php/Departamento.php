@@ -14,6 +14,7 @@ class Departamento{
 
     function listaDepartamento($id_pais){
         $conexion = $this->conn->conectar();
+		$consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT * FROM cat_departamento WHERE id_pais='".$id_pais."' ORDER BY nombre ASC");
         $consulta->execute();
 		$consulta->store_result();

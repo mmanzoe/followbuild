@@ -4,7 +4,7 @@ $return = Array();
 
 $con = new Conexion();
 $conexion = $con->conectar();
-
+$consulta = $conexion->query("SET NAMES 'utf8'");
 $consulta = $conexion->prepare("SELECT * FROM cat_tipo_placa");
 $consulta->execute();
 $consulta->store_result();

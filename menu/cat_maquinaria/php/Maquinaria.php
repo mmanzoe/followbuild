@@ -22,6 +22,7 @@ class Maquinaria{
 
 	function listado(){
         $conexion = $this->conn->conectar();
+        $consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT CM.id, CM.placa, CTP.tipo AS tipo_placa, CTM.Nombre as tipo, CMM.Nombre as marca, CLM.nombre as linea, CM.modelo, CM.descripcion, CM.tipo_placa as id_tipo_placa, CM.tipo as id_tipo, CM.marca as id_marca, CM.linea as id_linea
         FROM cat_maquinaria AS CM
         INNER JOIN cat_tipo_placa AS CTP ON (CTP.id = CM.tipo_placa )

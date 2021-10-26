@@ -15,6 +15,7 @@ class Municipio{
 
     function listaMunicipio($id_pais, $id_departamento){
         $conexion = $this->conn->conectar();
+		$consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT cat_municipio.*, cat_departamento.id_pais FROM cat_municipio INNER JOIN cat_departamento ON(cat_departamento.id = cat_municipio.id_departamento)
 		WHERE cat_municipio.id_departamento='".$id_departamento."' AND cat_departamento.id_pais='".$id_pais."'  ORDER BY nombre ASC");
         $consulta->execute();
