@@ -39,13 +39,12 @@ function listafacturas(){
 		success: function(Data){
 
 			for(var x=0; x<Data.length; x++){
-				console.log(Data[x]['id']);
+				//console.log(Data[x]['id']);
 				facturas.push({"no_orden":Data[x]['no_orden'], "serie":Data[x]['serie'], "documento":Data[x]['documento'], "nombre":Data[x]['nombre'], "fecha_factura":Data[x]['fecha_factura'], "credito":Data[x]['credito'], "total_factura":Data[x]['total_factura'], "abono":Data[x]['abono'], "saldo":Data[x]['saldo'], "usuario_ingresa":Data[x]['usuario_ingresa'], "fecha_ingresa":Data[x]['fecha_ingresa'], "acciones":Data[x]['acciones'] });
 			}
 
 			loadPanel.hide();
 
-			
 			$("#resultados").dxDataGrid({
 				dataSource: facturas,
 				showBorders: true,

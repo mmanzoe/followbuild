@@ -35,7 +35,7 @@ for($n=0; $n<mysqli_num_rows($resultados); $n++){
 			$colorcelda = "table-success";
 		}
 		
-		array_push($result,["no_orden"=>$fila['no_orden'], "serie"=>$fila['serie'], "documento"=>$fila['documento'], "nombre"=>$fila['nombre'], "fecha_factura"=>date_format(date_create($fila['fecha_factura']),'m-d-Y'), "credito"=>$fila['credito'], "total_factura"=>$fila['total_factura'], "abono"=>$registro['abonado'], "saldo"=>($fila['total_factura']-$registro['abonado']), "nombre_ingresa"=>$fila['nombre_ingresa'], "fecha_ingresa"=>date_format(date_create($fila['fecha_ingresa']),'d-m-Y'), "acciones"=>'<a href=""><span class="fa fa-check-circle valida" idregistro="'.$fila['id'].'"></span></a>']);
+		array_push($result,["no_orden"=>$fila['no_orden'], "serie"=>$fila['serie'], "documento"=>$fila['documento'], "nombre"=>$fila['nombre'], "fecha_factura"=>date_format(date_create($fila['fecha_factura']),'m-d-Y'), "credito"=>intval($fila['credito']), "total_factura"=>floatval($fila['total_factura']), "abono"=>floatval($registro['abonado']), "saldo"=>floatval($fila['total_factura']-$registro['abonado']), "nombre_ingresa"=>$fila['nombre_ingresa'], "fecha_ingresa"=>date_format(date_create($fila['fecha_ingresa']),'d-m-Y'), "acciones"=>'<a href=""><span style="color:blue" class="fa fa-check-circle valida" idregistro="'.$fila['id'].'"></span></a>']);
         
 	}
 

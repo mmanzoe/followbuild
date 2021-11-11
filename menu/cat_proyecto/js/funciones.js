@@ -54,7 +54,7 @@ function listaRegistro(){
         success: function(Data){
 			
             for(var x=0;x<Data.length;x++){
-                registros.push({"id":Data[x]["id"], "id_empresa":Data[x]["id_empresa"], "cod_proyecto":Data[x]['cod_proyecto'], "nombre_proyecto":Data[x]["nombre_proyecto"], "descripcion":Data[x]["descripcion"], "nombre_empresa":Data[x]['nombre_empresa'], "monto":Data[x]['monto'], "nombre_encargado":Data[x]['nombre_encargado'], "acciones":"<a href='' class='actualizar' id='"+Data[x]['id']+"' ><i class='fa fa-edit' title='editar'></i> </a> | <a href='calendario.html?id_proyecto="+Data[x]["id"]+"' target='_blank'  title='calendario' class='calendario'><span class='fa fa-calendar'></span></a> | <a href='' title='gastos' class='detalle-gasto' id_proyecto='"+Data[x]["id"]+"'><span class='fa fa-coins'></span></a>"})	
+                registros.push({"id":Data[x]["id"], "id_empresa":Data[x]["id_empresa"], "cod_proyecto":Data[x]['cod_proyecto'], "nombre_proyecto":Data[x]["nombre_proyecto"], "descripcion":Data[x]["descripcion"], "nombre_empresa":Data[x]['nombre_empresa'], "monto":Data[x]['monto'], "nombre_encargado":Data[x]['nombre_encargado'], "acciones":"<a href='' class='actualizar' id='"+Data[x]['id']+"' ><i style='color:blue' class='fa fa-edit' title='editar'></i> </a> | <a href='calendario.html?id_proyecto="+Data[x]["id"]+"' target='_blank'  title='calendario' class='calendario'><span style='color:green' class='fa fa-calendar'></span></a> | <a href='' title='gastos' class='detalle-gasto' id_proyecto='"+Data[x]["id"]+"'><span style='color:orange' class='fa fa-coins'></span></a>"})	
 			}
 
 			loadPanel.hide();

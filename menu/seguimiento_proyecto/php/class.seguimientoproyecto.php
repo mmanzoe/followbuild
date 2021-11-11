@@ -20,7 +20,7 @@ class SeguimientoProyecto{
         $consulta = $conexion->query("SET NAMES 'utf8'");
         $consulta = $conexion->prepare("SELECT cat_proyecto.*,
         (SELECT SUM(total_factura) FROM factura_proveedor_encabezado AS fpe WHERE id_proyecto= cat_proyecto.id) as total_gasto
-        FROM cat_proyecto");
+        FROM cat_proyecto WHERE estado = '1'");
 
         $consulta->execute();
 		$consulta->store_result();

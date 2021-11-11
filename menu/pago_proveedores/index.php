@@ -14,7 +14,7 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
 
 ?>
 <!doctype html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     
@@ -45,7 +45,7 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
     <script src="../../lib/alertify/js/alertify.js"></script>
     <script src="../../js/main.js"></script>
     <script src="js/funciones.js"></script>
-
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js"></script>
     <script src="../../lib/DevExtreme/js/dx.all.js"></script>
 
 </head>
@@ -68,7 +68,7 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
         <div id="main-menu" class="main-menu collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <a href="#"> <i class="menu-icon fa fa-tachometer-alt"></i>Dashboard </a>
+                    <a href="../"> <i class="menu-icon fa fa-tachometer-alt"></i>Dashboard </a>
                 </li>
                 <?php require_once '../../php/menu_dinamic.php'?>
             </ul>

@@ -46,6 +46,8 @@ function listaReporte(event){
 		},
 		success: function(Data){
 
+			console.log(Data);
+
 			for(var x=0; x<Data.length; x++){
 				console.log(Data[x]['id']);
 				ordenc.push({"id":Data[x]['id'], "nom_proveedor":Data[x]['nom_proveedor'], "tipo_orden":Data[x]['tipo_orden'], "monto":Data[x]['monto'], "nombre_ingresa":Data[x]['nombre_ingresa'], "fecha_ingresa":Data[x]['fecha_ingresa'], "estado":Data[x]['nombre_estado'], "nombre_autoriza":Data[x]['nombre_autoriza'], "fecha_autoriza":Data[x]['fecha_autoriza'], "acciones":Data[x]['acciones']  });
@@ -79,6 +81,27 @@ function listaReporte(event){
 				searchPanel: {
 					visible: true
 				},
+	
+				export: {
+                    enabled: true,
+                },
+                onExporting: function(e) {
+                var workbook = new ExcelJS.Workbook();
+                var worksheet = workbook.addWorksheet('facturas');
+                
+                DevExpress.excelExporter.exportDataGrid({
+                    component: e.component,
+                    worksheet: worksheet,
+                    autoFilterEnabled: true
+                }).then(function() {
+                    workbook.xlsx.writeBuffer().then(function(buffer) {
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'Orden_Compra.xlsx');
+                    });
+                });
+                e.cancel = true;
+                },
+
+				
 			})
 			
 			

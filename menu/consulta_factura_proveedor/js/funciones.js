@@ -75,6 +75,26 @@ function busca_factura(){
 				searchPanel: {
 					visible: true
 				},
+
+				export: {
+                    enabled: true,
+                },
+                onExporting: function(e) {
+                var workbook = new ExcelJS.Workbook();
+                var worksheet = workbook.addWorksheet('facturas');
+                
+                DevExpress.excelExporter.exportDataGrid({
+                    component: e.component,
+                    worksheet: worksheet,
+                    autoFilterEnabled: true
+                }).then(function() {
+                    workbook.xlsx.writeBuffer().then(function(buffer) {
+                    saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'Factura_Compra.xlsx');
+                    });
+                });
+                e.cancel = true;
+                },
+
 			})
 			
 		},

@@ -36,12 +36,7 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
     <script src="../js/popper.min.js"></script>
     <script src="../lib/bootstrap/js/bootstrap.js"></script>
     <script src="../js/main.js"></script>
-
-    <link href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
-    <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
-    <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/extensions/export/bootstrap-table-export.min.js"></script>
-    <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table-locale-all.min.js"></script>
+    <script src="js/funciones_dashboard.js"></script>
     
 </head>
 
@@ -139,6 +134,91 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
             <div class="animated fadeIn mt-3">
                 <div class="row">
                     
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-white bg-flat-color-5">
+                            <div class="card-body pb-0 mb-3">
+                                <h4 class="mb-0">
+                                    <span class="count cant_proyecto"></span>
+                                </h4>
+                                <p class="text-light">Proyectos Activos</p>
+
+                                <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                                    <span class="fa fa-building fa-5x"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-white bg-flat-color-1">
+                            <div class="card-body pb-0 mb-3">
+                                <h4 class="mb-0">
+                                    <span class="count cant_fac_pago">10</span>
+                                </h4>
+                                <p class="text-light">Factura pendiente pago</p>
+
+                                <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                                    <span class="fa fa-chart-bar fa-5x"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-white bg-flat-color-1">
+                            <div class="card-body pb-0 mb-3">
+                                <h4 class="mb-0">
+                                    <span class="count cant_fac_cobro"></span>
+                                </h4>
+                                <p class="text-light">Factura pendiente cobro</p>
+
+                                <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                                    <span class="fa fa-chart-bar fa-5x"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-white bg-flat-color-1">
+                            <div class="card-body pb-0 mb-3">
+                                <h4 class="mb-0">
+                                    <span class="count cant_proyecto_vencimiento"></span>
+                                </h4>
+                                <p class="text-light">Proyectos vencen durante el mes</p>
+
+                                <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                                    <span class="fa fa-building fa-5x"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card text-white bg-flat-color-3">
+                            <div class="card-body pb-0 mb-3">
+                                <h4 class="mb-0">
+                                    <span class="count cant_oc_pendiente_valida"></span>
+                                </h4>
+                                <p class="text-light">Orden Compra pendiende de validar</p>
+
+                                <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                                    <span class="fa fa-file fa-5x"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -147,89 +227,6 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
     </div><!-- /#right-panel -->
 
     <!-- Right Panel -->
-
-<script>
-    var $table = $('#table')
-
-    $(function() {
-        var data = [
-            {
-                'id': 0,
-                'name': 'Item 0',
-                'price': '$0'
-            },
-            {
-                'id': 1,
-                'name': 'Item 1',
-                'price': '$1'
-            },
-            {
-                'id': 2,
-                'name': 'Item 2',
-                'price': '$2'
-            },
-            {
-                'id': 3,
-                'name': 'Item 3',
-                'price': '$3'
-            },
-            {
-                'id': 4,
-                'name': 'Item 4',
-                'price': '$4'
-            },
-            {
-                'id': 5,
-                'name': 'Item 5',
-                'price': '$5'
-            },
-            {
-                'id': 2,
-                'name': 'Item 2',
-                'price': '$2'
-            },
-            {
-                'id': 3,
-                'name': 'Item 3',
-                'price': '$3'
-            },
-            {
-                'id': 4,
-                'name': 'Item 4',
-                'price': '$4'
-            },
-            {
-                'id': 5,
-                'name': 'Item 5',
-                'price': '$5'
-            },
-            {
-                'id': 2,
-                'name': 'Item 2',
-                'price': '$2'
-            },
-            {
-                'id': 3,
-                'name': 'Item 3',
-                'price': '$3'
-            },
-            {
-                'id': 4,
-                'name': 'Item 4',
-                'price': '$4'
-            },
-            {
-                'id': 5,
-                'name': 'Item 5',
-                'price': '$5'
-            }
-        ]
-        
-        $table.bootstrapTable({data: data})
-
-    })
-
-</script>
 
 </body>
 

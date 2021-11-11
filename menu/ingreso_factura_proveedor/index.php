@@ -14,7 +14,7 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
 
 ?>
 <!doctype html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     
@@ -67,7 +67,7 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
         <div id="main-menu" class="main-menu collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <a href="#"> <i class="menu-icon fa fa-tachometer-alt"></i>Dashboard </a>
+                    <a href="../"> <i class="menu-icon fa fa-tachometer-alt"></i>Dashboard </a>
                 </li>
                 <?php require_once '../../php/menu_dinamic.php'?>
             </ul>
