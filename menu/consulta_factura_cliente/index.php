@@ -12,6 +12,7 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
     header('location: ../');
 }
 
+
 ?>
 <!doctype html>
 <html lang="es">
@@ -23,7 +24,7 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
     <meta name="description" content="sistema algo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.min.css">
@@ -34,24 +35,21 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../../lib/DevExtreme/css/dx.common.css">
     <link rel="stylesheet" href="../../lib/DevExtreme/css/dx.light.css">
-
+   
     <script src="../../lib/DevExtreme/js/polyfill.min.js"></script>
     <script src="../../lib/DevExtreme/js/exceljs.min.js"></script>
     <script src="../../lib/DevExtreme/js/FileSaver.min.js"></script>
-
     <script src="../../js/jquery-3.0.0.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../lib/bootstrap/js/bootstrap.js"></script>
-    <script src="../../lib/numeric/numeric.js"></script>
     <script src="../../lib/alertify/js/alertify.js"></script>
     <script src="../../js/main.js"></script>
     <script src="js/funciones.js"></script>
-
     <script src="../../lib/DevExtreme/js/dx.all.js"></script>
 
+    
 </head>
 <body>
-    
 
 <!-- Left Panel -->
 
@@ -118,7 +116,7 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
         <div class="col-sm-4">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>PAGO CLIENTES</h1>
+                    <h1>CONSULTA FACTURA CLIENTE</h1>
                 </div>
             </div>
         </div>
@@ -134,116 +132,163 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
     </div>
 
     <div class="content mt-3">
-        
+
       <div class="row">
 
         <div class="col-md-12">
-            <div class="card table-responsive">
-                <div class="card-body">
-                    <div class="loadpanel"></div>
-                    <div id="resultados"></div>
-                </div>
-                
-            </div>
-
+          <div class="card table-responsive">
+              <div class="card-header">
+              <input type="button" class="btn btn-sm btn-success pull-right"  data-toggle="modal" data-target="#modal-parametros"value="paramentros">
+              </div>
+              <div class="card-body">
+                  <div class="loadpanel"></div>
+                  <div id="resultados"></div>
+              </div>
+          </div>
         </div>
 
       </div>
         
-
     </div> <!-- .content -->
 </div><!-- /#right-panel -->
 
-<!-- Right Panel -->     
-    
+<!-- Right Panel --> 
  
-</body>
 
 
-<!--MODAL PARA ASIGANAR PAGOS-->
-<div class="modal modal-pago fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
+<!--Modal para paramentros de busqueda-->
+<div class="modal fade" id="modal-parametros" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content modal-">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Pago factura</h5>
+        <h5 class="modal-title" id="exampleModalCenterTitle">Paramentros de busqueda</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form id="grabar">
-      <div class="modal-body">
-        <div class="row">
-          <input type="hidden" id="idfactura">
-          <div class="col-6">
-            <div class="row">
-              <div class="col-5">        
-                <label>Tipo de pago:</label>
+      <div class="modal-body">     
+          <div class="form-group row">
+              <label class="col-3 col-form-label">No. Factura</label>
+              <div class="col-8">
+                  <input type="text" class="form-control form-control-sm" id="no_factura">
               </div>
-              <div class="col-6"> 
-                <select class="form-control form-control-sm" id="forma_pago" required>
+          </div>
+          <div class="form-group row">
+              <label class="col-3 col-form-label">Fecha Inicio</label>
+              <div class="col-8">
+                  <input type="date" class="form-control form-control-sm" id="fecha_i">
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-3 col-form-label">Fecha Final</label>
+              <div class="col-8">
+                  <input type="date" class="form-control form-control-sm" id="fecha_f">
+              </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-3 col-form-label">Busqueda</label>
+            <div class="col-8">
+                <select class="form-control form-control-sm" id="tipo_fecha">
+                    <option value="1">Fecha de ingreso</option>
+                    <option value="2">Fecha factura</option>
                 </select>
-              </div>  
-            </div>
-            <div class="row">
-              <div class="col-5">        
-                <label>Forma de pago:</label>
-              </div>
-              <div class="col-6"> 
-                <select class="form-control form-control-sm" id="tipo" required></select>
-              </div>  
-            </div>
-            <div class="row">
-              <div class="col-5">        
-                <label>Monto:</label>
-              </div>
-              <div class="col-6"> 
-                <input type="text" class="form-control form-control-sm" id="monto" required>
-              </div>  
-            </div>
-            <div class="row">
-              <div class="col-5">        
-                <label>Doc. Valida:</label>
-              </div>
-              <div class="col-6"> 
-                <input type="text" class="form-control form-control-sm" id="doc_valida" required>
-              </div>  
-            </div>
-              <div class="row" hidden>
-              <div class="col-5">        
-                <label>Carga Retencion:</label>
-              </div>
-              <div class="col-6"> 
-                <div class="custom-file">
-                    <input type="file" class="custom-file-input form-control-sm" name="file[]" id="file">
-                    <label class="custom-file-label">Seleccione</label>
-                </div>
-              </div>  
             </div>
           </div>
-          <div class="col-6">
-            <div class="row">
-              <div class="col-12 text-center">
-                <label class="text-center">Detalle Pago</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 detalle-pago">             
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button class="btn btn-success" id="buscar"><span class="fa fa-search"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!--Modal para listar registros de factura-->
+<div class="modal detalle_factura" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Detalle Factura</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body muestra_detalle_factura">
         
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="submit" class="btn btn-sm btn-success">Grabar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
       </div>
-      </form>
+    </div>
+  </div>
+</div>
+
+<!--Modal para mostrar la imagen de la factura-->
+<div class="modal image_factura" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Factura</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body muestra_factura">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <a class="btn btn-success descarga_img"><span class="fa fa-download"></span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Modal para listar la forma en que se liquida la factura-->
+<div class="modal detalle_pago_factura" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Detalle Pago Factura</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body muestra_detalle_pago_factura">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+      </div>
     </div>
   </div>
 </div>
 
 
 
+<!--Modal para mostrar retencion-->
+<div class="modal retencion_pago_factura" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Retencion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body muestra_retencion_pago_factura">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
+</body>
 </html>

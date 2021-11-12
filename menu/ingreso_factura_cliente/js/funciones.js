@@ -16,6 +16,8 @@ function inicioEventos(){
 	$('.busca-cliente').click(listaCliente);
 	$('.resultadocliente').on('click','.agregacliente',agregacliente);
 
+	$('#monto').numeric('.');
+
 }
 
 

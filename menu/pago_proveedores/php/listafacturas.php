@@ -5,9 +5,10 @@ require('../../../php/conect.php');
 $result = Array();
 
 
-$consu = "SELECT fac_en.*, cat_proveedor.nombre, (SELECT SUM(valor) FROM detalle_pago_proveedor WHERE id_factura=fac_en.id) as pagado 
+$consu = "SELECT fac_en.*, cat_proveedor.nombre, usuario.nombre as usuario_ingresa, (SELECT SUM(valor) FROM detalle_pago_proveedor WHERE id_factura=fac_en.id) as pagado 
 FROM factura_proveedor_encabezado as fac_en 
 INNER JOIN cat_proveedor ON(cat_proveedor.nit = fac_en.proveedor) 
+INNER JOIN usuario ON(usuario.id = fac_en.nombre_ingresa)
 WHERE fac_en.estado='1' ORDER BY fac_en.no_orden asc";
 
 $resultados = mysqli_query($conexion, $consu);
@@ -35,7 +36,7 @@ for($n=0; $n<mysqli_num_rows($resultados); $n++){
 			$colorcelda = "table-success";
 		}
 		
-		array_push($result,["no_orden"=>$fila['no_orden'], "serie"=>$fila['serie'], "documento"=>$fila['documento'], "nombre"=>$fila['nombre'], "fecha_factura"=>date_format(date_create($fila['fecha_factura']),'m-d-Y'), "credito"=>intval($fila['credito']), "total_factura"=>floatval($fila['total_factura']), "abono"=>floatval($registro['abonado']), "saldo"=>floatval($fila['total_factura']-$registro['abonado']), "nombre_ingresa"=>$fila['nombre_ingresa'], "fecha_ingresa"=>date_format(date_create($fila['fecha_ingresa']),'d-m-Y'), "acciones"=>'<a href=""><span style="color:blue" class="fa fa-check-circle valida" idregistro="'.$fila['id'].'"></span></a>']);
+		array_push($result,["no_orden"=>$fila['no_orden'], "serie"=>$fila['serie'], "documento"=>$fila['documento'], "nombre"=>$fila['nombre'], "fecha_factura"=>date_format(date_create($fila['fecha_factura']),'m-d-Y'), "credito"=>intval($fila['credito']), "total_factura"=>floatval($fila['total_factura']), "abono"=>floatval($registro['abonado']), "saldo"=>floatval($fila['total_factura']-$registro['abonado']), "usuario_ingresa"=>$fila['usuario_ingresa'], "fecha_ingresa"=>date_format(date_create($fila['fecha_ingresa']),'d-m-Y'), "acciones"=>'<a href="" class="valida" idregistro="'.$fila['id'].'"><span style="color:blue" class="fa fa-check-circle"></span></a>']);
         
 	}
 

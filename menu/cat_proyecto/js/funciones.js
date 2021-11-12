@@ -4,6 +4,9 @@ arrayfases = [];
 arraygastos = [];
 
 function inicioEventos(){
+
+	$('#monto').numeric('.');
+	$('#monto_gasto').numeric('.');
 	
 	listaRegistro();
 	listaempresa();
@@ -122,9 +125,27 @@ function agregarfase(){
 	$("#resultados_fases").dxDataGrid({
 		dataSource: arrayfases,
 		showBorders: true,
+		columns: [
+			"id_fase",
+			"nombre",
+			{
+				dataField: "fecha_inicial",
+				dataType: "date",
+				format: "dd-MM-yyy"
+			},
+			{
+				dataField: "fecha_final",
+				dataType: "date",
+				format: "dd-MM-yyy"
+			},
+		]
 	})
 
 	$('#modal_add_fase').modal('hide');
+	
+	$('#fecha_fase_inicial').val('');
+	$('#fecha_fase_final').val('');
+	$('#fecha_fase_inicial').attr('min',fecha_fase_final);
 
 }
 
@@ -141,6 +162,8 @@ function agregargasto(){
 	})
 
 	$('#modal_add_gasto').modal('hide');
+
+	$('#monto_gasto').val('');
 
 }
 

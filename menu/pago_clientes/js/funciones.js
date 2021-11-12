@@ -9,6 +9,7 @@ function inicioEventos(){
 	$('#resultados').on('click', '.valida', modalPago);
 	$('#forma_pago').change(cargatipopago);
 	$('#grabar').submit(grabaregistro);
+	$('#monto').numeric('.');
     
 }
 
@@ -247,8 +248,9 @@ function grabaregistro(event){
 			$('.alertify-log').remove();
 			
 			if(Data.ok == true){
-				listadetallepago();
+				//listadetallepago();
 				alertify.success(Data.msg);
+				$('.modal-pago').modal('hide');
 				listafacturas();
 			}else if(Data.ok == false){
 				alertify.error(Data.msg);

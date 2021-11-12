@@ -17,6 +17,8 @@ function inicioEventos(){
 	$('#agregar').submit(agregaArticulo);
 	$('.resultados').on("click",".eliminar",eliminarProducto);
 	$('.resultados').on('click','.trasladar',trasladarProducto);
+
+	$('#cantidad_material').numeric('.');
 	
 	
 }

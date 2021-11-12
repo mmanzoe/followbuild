@@ -42,6 +42,7 @@ if(!isset( $_SESSION['datos_logueo']['estado'] )){
     <script src="../../js/jquery-3.0.0.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../../lib/numeric/numeric.js"></script>
     <script src="../../lib/alertify/js/alertify.js"></script>
     <script src="../../js/main.js"></script>
     <script src="js/funciones.js"></script>

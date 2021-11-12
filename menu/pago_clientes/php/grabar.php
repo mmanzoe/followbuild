@@ -38,19 +38,32 @@ if($valor > $diferencia){
 	$return = Array('ok' => FALSE, 'msg' => "El monto ingresado es superior al monto pendiente de pago en la factura! ");
 }else{
 	
-    $insert = "INSERT INTO detalle_pago_cliente (id_factura, id_tipo_pago, id_banco, documento_valida, archivo_retencion, valor, nombre_ingresa) VALUES('".$idfactura."','".$formapago."','".$tipo."','".$docvalida."', '".$ruta."', '".$valor."','".$_SESSION['datos_logueo']['idusuario']."')";
-	$resultados = mysqli_query($conexion, $insert);
-	
-    cargaimg($idfactura, $docvalida);
-	
-	if(mysqli_affected_rows($conexion)>0){
-		$return = Array('ok' => TRUE, 'msg' => "registro grabado correctamente");
+	//VALIDA DOCUMENTO REPETIDO
+	$consudocto = "SELECT * FROM detalle_pago_cliente WHERE id_tipo_pago='".$formapago."' AND id_banco='".$tipo."' AND documento_valida='".$docvalida."' LIMIT 1";
+	$resdocto = mysqli_query($conexion, $consudocto);
+
+	if(mysqli_num_rows($resdocto)>0){
+		$return = Array('ok' => FALSE, 'msg' => "Documento ya registrado anteriormente");
 	}else{
-		$return = Array('ok' => FALSE, 'msg' => "Error de grabacion");
+
+		$insert = "INSERT INTO detalle_pago_cliente (id_factura, id_tipo_pago, id_banco, documento_valida, archivo_retencion, valor, nombre_ingresa) VALUES('".$idfactura."','".$formapago."','".$tipo."','".$docvalida."', '".$ruta."', '".$valor."','".$_SESSION['datos_logueo']['idusuario']."')";
+		$resultados = mysqli_query($conexion, $insert);
+		
+		cargaimg($idfactura, $docvalida);
+		
+		if(mysqli_affected_rows($conexion)>0){
+			$return = Array('ok' => TRUE, 'msg' => "registro grabado correctamente");
+		}else{
+			$return = Array('ok' => FALSE, 'msg' => "Error de grabacion");
+		}
+
 	}
+
+
+    
 }
 
-
+/*
 $consupago = "SELECT fac_en.monto, (SELECT SUM(valor) FROM detalle_pago_cliente WHERE id_factura='".$idfactura."') as pagado FROM factura_cliente_encabezado as fac_en WHERE fac_en.id ='".$idfactura."'";
 $resultadopagado = mysqli_query($conexion, $consupago);
 $row = mysqli_fetch_assoc($resultadopagado);
@@ -59,7 +72,7 @@ if($row['monto'] == $row['pagado']){
      $update = "UPDATE factura_encabezado_cliente SET estado = '1', fecha_pago='".date('Y-m-d H:i:s')."' WHERE id='".$idfactura."'";
 	 $resupdatae = mysqli_query($conexion, $update);	
 }
-
+*/
 
 
 

@@ -2,7 +2,7 @@ $(document).ready(inicioEventos);
 
 function inicioEventos(){
 	
-    //$('#monto').numeric(".");
+    $('#monto').numeric('.');
 	listafacturas();
 	listaforampago();
 	$('#buscar_requerimiento').click(listafacturas);
@@ -58,7 +58,7 @@ function listafacturas(){
 					"total_factura",
 					"abono",
 					"saldo",
-					"nombre_ingresa",
+					"usuario_ingresa",
 					"fecha_ingresa",
 					{
 						dataField: "acciones",
@@ -145,6 +145,8 @@ function modalPago(event){
 	$('.modal-pago').modal('show');
 	$('#idfactura').val($(this).attr('idregistro'));
 	listadetallepago();
+	$('#monto').val('');
+	$('#doc_valida').val('');
 	
 }
 
@@ -246,8 +248,9 @@ function grabaregistro(event){
 			$('.alertify-log').remove();
 			
 			if(Data.ok == true){
-				listadetallepago();
+				//listadetallepago();
 				alertify.success(Data.msg);
+				$('.modal-pago').modal('hide');
 				listafacturas();
 			}else if(Data.ok == false){
 				alertify.error(Data.msg);

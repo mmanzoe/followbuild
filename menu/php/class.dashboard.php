@@ -35,7 +35,11 @@ class Dashboard{
         
         $conexion = $this->conn->conectar();
 		$consulta = $conexion->query("SET NAMES 'utf8'");
-        $consulta = $conexion->prepare("SELECT COUNT(*) AS TOTAL FROM factura_proveedor_encabezado WHERE estado ='1'");
+        $consulta = $conexion->prepare("SELECT COUNT(*) AS TOTAL
+        FROM factura_proveedor_encabezado as fac_en 
+        WHERE fac_en.estado='1'
+        AND
+        fac_en.total_factura > if( (SELECT SUM(valor) FROM detalle_pago_proveedor WHERE id_factura=fac_en.id) IS NOT NULL, (SELECT SUM(valor) FROM detalle_pago_proveedor WHERE id_factura=fac_en.id), 0  )");
         $consulta->execute();
 		$consulta->store_result();
 
@@ -55,7 +59,11 @@ class Dashboard{
         
         $conexion = $this->conn->conectar();
 		$consulta = $conexion->query("SET NAMES 'utf8'");
-        $consulta = $conexion->prepare("SELECT COUNT(*) AS TOTAL FROM factura_cliente_encabezado WHERE estado ='1'");
+        $consulta = $conexion->prepare("SELECT COUNT(*) AS TOTAL
+        FROM factura_cliente_encabezado as fac_en 
+        WHERE fac_en.estado='1'
+        AND
+        fac_en.monto > if( (SELECT SUM(valor) FROM detalle_pago_cliente WHERE id_factura=fac_en.id) IS NOT NULL, (SELECT SUM(valor) FROM detalle_pago_cliente WHERE id_factura=fac_en.id), 0  )");
         $consulta->execute();
 		$consulta->store_result();
 
