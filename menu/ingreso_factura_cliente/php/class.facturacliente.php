@@ -12,17 +12,17 @@ class Factura{
 
 	function listado(){
         $conexion = $this->conn->conectar();
-        $consulta = $conexion->prepare("SELECT * FROM factura_cliente_encabezado");
+        $consulta = $conexion->prepare("SELECT fce.*, usuario.nombre as nombre_usuario FROM factura_cliente_encabezado AS fce INNER JOIN usuario ON(usuario.id = fce.id_usuario_ingresa)");
 
         $consulta->execute();
 		$consulta->store_result();
 
 		if($consulta->num_rows>0){
-            $consulta->bind_result($id, $id_cliente, $serie, $factura, $fecha_factura, $monto, $id_usuario_ingresa, $fecha_ingresa);
+            $consulta->bind_result($id, $id_cliente, $serie, $factura, $fecha_factura, $monto, $credito, $estado, $id_usuario_ingresa, $fecha_ingresa, $nombre_usuario);
 
             while ($consulta->fetch()) {
                 
-				array_push($this->registros,array("id"=>$id, "id_cliente"=>$id_cliente, "serie"=>$serie, "factura"=>$factura, "fecha_factura"=>$fecha_factura, "monto"=>$monto, "id_usuario_ingresa"=>$id_usuario_ingresa, "fecha_ingresa"=>$fecha_ingresa));
+				array_push($this->registros,array("id"=>$id, "id_cliente"=>$id_cliente, "serie"=>$serie, "factura"=>$factura, "fecha_factura"=>$fecha_factura, "monto"=>$monto, "id_usuario_ingresa"=>$id_usuario_ingresa, "fecha_ingresa"=>$fecha_ingresa, "nombre_usuario"=>$nombre_usuario ));
             }
     
         }

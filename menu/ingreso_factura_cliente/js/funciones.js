@@ -22,6 +22,7 @@ function inicioEventos(){
 
 
 function listaRegistro(){	
+
 	
 	var registros = [];
 	var loadPanel = $(".loadpanel").dxLoadPanel({
@@ -42,9 +43,11 @@ function listaRegistro(){
 		url:"php/Factura.php",
 		data: "tipo=read",
         success: function(Data){
+
+			console.log(Data);
 			
             for(var x=0;x<Data.length;x++){
-                registros.push({"id":Data[x]["id"], "id_cliente":Data[x]["id_cliente"], "serie":Data[x]["serie"], "factura":Data[x]["factura"], "fecha_factura":Data[x]["fecha_factura"], "monto":Data[x]["monto"], "id_usuario_ingresa":Data[x]["id_usuario_ingresa"], "fecha_ingresa":Data[x]["fecha_ingresa"] })	
+                registros.push({"id":Data[x]["id"], "id_cliente":Data[x]["id_cliente"], "serie":Data[x]["serie"], "factura":Data[x]["factura"], "fecha_factura":Data[x]["fecha_factura"], "monto":Data[x]["monto"], "id_usuario_ingresa":Data[x]["id_usuario_ingresa"], "fecha_ingresa":Data[x]["fecha_ingresa"], "nombre_usuario":Data[x]["nombre_usuario"] })	
 			}
 
 			loadPanel.hide();
@@ -59,8 +62,12 @@ function listaRegistro(){
 					"factura",
 					"fecha_factura",
 					"monto",
-					"id_usuario_ingresa",
-					"fecha_ingresa",
+					"nombre_usuario",
+					{
+                        dataField: "fecha_ingresa",
+                        dataType: "date",
+                        format: 'dd-MM-yyyy' 
+                    },
 				],
 				searchPanel: {
 					visible: true
@@ -85,8 +92,10 @@ function listaRegistro(){
                 },
 			})
 
-
-        }
+        },
+		error: function(){
+			console.log('adsdassda');
+		}
     })
 
 }

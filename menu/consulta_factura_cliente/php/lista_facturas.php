@@ -40,7 +40,7 @@ for($n=0; $n<mysqli_num_rows($resultados); $n++){
 	array_push($result,["serie"=>$fila['serie'], "factura"=>$fila['factura'], "fecha_factura"=>date_format(date_create($fila['fecha_factura']),'d-m-Y'), "monto"=>$fila['monto'],
 						"nombre_cliente"=>$fila['nombre_cliente'],"total_factura"=>number_format($fila['monto'],2,'.',','),
 						"nombre_ingresa"=>$fila['nombre_ingresa'], "fecha_ingresa"=>date_format(date_create($fila['fecha_ingresa']),'d-m-Y'),
-						"nombre_estado"=>$fila['nombre_estado'], "acciones"=>'<a href="" class="detallepago" title="detalle pago" idregistro="'.$fila['id'].'" serie="'.$fila['serie'].'" factura="'.$fila['factura'].'" ><span class="fa fa-list"></span></a> | '.$linkelimina ]);
+						"nombre_estado"=>$fila['nombre_estado'], "acciones"=>'<a href="reporte.php?reg='.MD5($fila['id']).'" target="_blank" ><span class="fa fa-file-invoice"></span></a> | <a href="" class="detallepago" title="detalle pago" idregistro="'.$fila['id'].'" serie="'.$fila['serie'].'" factura="'.$fila['factura'].'" ><span class="fa fa-list"></span></a> | '.$linkelimina ]);
 	
 	
 }		
